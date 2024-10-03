@@ -1,0 +1,15 @@
+<div class="menu-sidebar-content js-scrollbar1">
+    <nav class="navbar-sidebar">
+
+        <h3>Publishers</h3>
+        <hr style="margin-bottom: 15px;">
+        
+        <ul class="list-unstyled navbar-list">
+            <li *ngFor="let tempPublisher of publishers">
+                <a routerLink="/publisher/{{ tempPublisher.id }}/{{tempPublisher.publisher}}" routerLinkActive="active-link">
+                    {{ tempPublisher.publisher }}
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

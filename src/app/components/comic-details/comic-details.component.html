@@ -1,0 +1,21 @@
+<div class="detail-section">
+    <div >
+        
+        <img src="{{ comic.imageUrl }}" class="detail-img">
+
+        <div class="detail-title">
+            <h3>{{ comic.title }} #{{ comic.issue }}</h3>
+            <h4 style="margin-bottom: 7px;">Published: {{ comic.dateCreated}}</h4>
+            <h4> Printing Number: {{ comic.printingNum }}</h4>
+            <h4 class="detail-upc">UPC: {{ comic.upc }}</h4>
+            <h4>{{ publisher.publisher }}</h4>
+
+            <hr>
+        </div>
+        <button routerLink="/comics">
+            <input type="submit" class="remove" value="Remove Comic" onclick="return confirm('ARE YOU SURE?')" />
+        </button>
+        <hr>
+        <button routerLink="/comics" class="back">Back to Comic List</button>
+    </div>
+</div>

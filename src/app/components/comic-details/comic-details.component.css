@@ -1,0 +1,40 @@
+.back {
+        color:#fff;
+        background-color:#ed1d24!important;
+        border-color:#ed1d24!important;
+        background:#9f1418;
+        padding:7px 20px;
+        text-align:center;
+        display:inline-block;
+        color:#fff;
+        border-radius:43px;
+        font-size:14px;
+        margin-top:5px;
+        margin-left: 20px;
+}
+
+.back:hover {
+    background:#9f1418!important;
+}
+
+.remove {
+    position: absolute;
+    left: 19vw;
+    top: 80vh;
+    color:#fff;
+    background-color:#ed1d24!important;
+    border-color:#ed1d24!important;
+    background:#9f1418;
+    padding:7px 20px;
+    text-align:center;
+    display:inline-block;
+    color:#fff;
+    border-radius:43px;
+    font-size:14px;
+    margin-top:5px;
+    margin-left: 20px;
+}
+
+.remove:hover {
+    background:#9f1418!important;
+}

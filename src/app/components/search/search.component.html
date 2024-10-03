@@ -1,0 +1,14 @@
+<form class="form-header">
+
+    <input #myInput type="text"
+            placeholder="Search for comics..."
+            class="au-input au-input-xl"
+            (keyup.enter)="doSearch(myInput.value)"/>
+
+    <button (click)="doSearch(myInput.value)" class="au-btn-submit">
+        Search
+    </button>
+
+        <button routerLink="/addComic" class="add">New Comic</button>
+    
+</form>

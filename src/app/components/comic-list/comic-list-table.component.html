@@ -1,0 +1,31 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="row">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Cover</th>
+                            <th>Title</th>
+                            <th>Publisher</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let tempComic of comics">
+                            <td class="align-middle">
+                                <a routerLink="/comics/{{ tempComic.id }}">
+                                    <img src="{{ tempComic.imageUrl }}" height="50">
+                                </a>
+                            </td>
+                                <div>
+                                    <td class="align-middle">{{ tempComic.title }} #{{ tempComic.issue }}</td>
+                                </div>
+                            <td class="align-middle">{{ tempComic.publisher }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
